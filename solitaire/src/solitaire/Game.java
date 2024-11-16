@@ -134,7 +134,7 @@ public class Game extends JLabel implements MouseListener, Runnable {
                     do {
                         deck.setCard(waste.getCard());
                         deck.getCard().setFaceUp(false);
-                    } while(!waste.isEmpty());
+                    } while (!waste.isEmpty());
                 }
                 
                 repaint();
