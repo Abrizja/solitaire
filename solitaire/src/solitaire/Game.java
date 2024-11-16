@@ -92,7 +92,7 @@ public class Game extends JLabel implements MouseListener, Runnable {
         }
         
         setOpaque(true);
-        setBackground(new Color(-16726016));
+        setBackground(new Color(0, 200, 0));
         setHorizontalAlignment(JLabel.CENTER);
         setFont(getFont().deriveFont((float) CARD_HEIGHT / 3));
         setPreferredSize(new Dimension(tableau[tableau.length - 1].getX() + tableau[tableau.length - 1].getWidth() + INSET, tableau[tableau.length - 1].getY() + tableau[tableau.length - 1].getHeight() + INSET));
