@@ -108,7 +108,7 @@ public class Game extends JLabel implements MouseListener, Runnable {
         }
         
         long time = (System.currentTimeMillis() - startTime) / 1000;
-        setText(time / 60 / 60 + ":" + new DecimalFormat("00").format(time / 60 % 60) + ":" + new DecimalFormat("00").format(time % 60));
+        setText(time / 3600 + ":" + new DecimalFormat("00").format(time / 60 % 60) + ":" + new DecimalFormat("00").format(time % 60));
         
         return true;
     }
