@@ -114,13 +114,7 @@ public class Game extends JLabel implements MouseListener, Runnable {
     }
 
     @Override
-    public void mouseClicked(MouseEvent e) {}
-
-    @Override
-    public void mousePressed(MouseEvent e) {}
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
+    public void mouseClicked(MouseEvent e) {
         if (SwingUtilities.isLeftMouseButton(e) && getComponentAt(e.getPoint()) instanceof Pile) {
             Pile pile = (Pile) getComponentAt(e.getPoint());
             
@@ -204,6 +198,12 @@ public class Game extends JLabel implements MouseListener, Runnable {
         }
     }
 
+    @Override
+    public void mousePressed(MouseEvent e) {}
+
+    @Override
+    public void mouseReleased(MouseEvent e) {}
+    
     @Override
     public void mouseEntered(MouseEvent e) {}
 
