@@ -9,8 +9,7 @@ public class Card extends JLabel {
     final public static int CARD_WIDTH = 45;
     final public static int CARD_HEIGHT = 60;
     
-    final private static ImageIcon BACK = new ImageIcon("back.png");
-    
+    final private static ImageIcon BACK = new ImageIcon("back.png");    
     public static BufferedImage face;
     
     public static enum Suit {
